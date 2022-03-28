@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <title>Take A Hike</title>
+</head>
+<body>
+
+    <header>
+        <h1>Take A Hike</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#locations">Locations</a>
+                </li>
+                <li>
+                    <a href="#weather">Weather</a>
+                </li>
+                <li>
+                    <a href="#images">Images</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <!-- Start Carousel -->
+                <div id="carousel" class="carousel">
+                    <div class="car-item item-1">
+                        <!-- Slide Content -->
+                        <img src="./assets/images/hocking-hills-1.png">
+                    </div>
+                    <div class="car-item item-2">
+                        <!-- Slide Content -->
+                        <img src="./assets/images/glen-helen.png">
+                    </div>
+                    <div class="car-item item-3">
+                        <!-- Slide Content -->
+                        <img src="./assets/images/hocking-hills-2.png">
+                    </div>
+                    <div class="car-item item-4">
+                        <!-- Slide Content -->
+                        <img src="./assets/images/mill-creek-park.png">
+                    </div>
+                </div>
+                <!-- End Carousel -->
+            </div>
+        </section>
+    
+        <section id="locations">
+
+        </section>
+
+        <section class ="weather" id="weather">
+            <h2>Top National Parks Weather</h2>
+            <button type="button" onclick="checkWeather()" class="btn btn-danger weatherbutton">Check Weather</button>
+           <div class="container-1">
+            
+            <div class="card level-3 row" id="0">
+            
+            <h2>Yosemite National Park</h2>
+            <span><b>Temperature: </b></span><span id="main_temp"></span><span id="main_temp_unit"></span><br />
+            <span><b>Wind speed: </b></span><span id="wind_speed"></span> <span id="wind_speed_unit"></span><br />
+            <span><b>Current conditions: </b></span><span id="weather_conditions"></span>
+        </div>
+        <div class="card level-3 row" id="1">
+             
+            <h2>Weather</h2>
+            <span><b>Temperature: </b></span><span id="main_temp1"></span><span id="main_temp_unit"></span><br />
+            <span><b>Wind speed: </b></span><span id="wind_speed1"></span> <span id="wind_speed_unit"></span><br />
+            <span><b>Current conditions: </b></span><span id="weather_conditions1"></span>
+        </div>
+        <div class="card level-3 row" id="2">
+           
+            <h2>Weather</h2>
+            <span><b>Temperature: </b></span><span id="main_temp2"></span><span id="main_temp_unit"></span><br />
+            <span><b>Wind speed: </b></span><span id="wind_speed2"></span> <span id="wind_speed_unit"></span><br />
+            <span><b>Current conditions: </b></span><span id="weather_conditions2"></span>
+        </div>
+        </div>
+        </section>
+
+        <section id="images">
+
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
